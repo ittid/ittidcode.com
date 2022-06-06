@@ -1,0 +1,103 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+/**
+ * Clear inner floats
+ */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/**
+ * Main content containers
+ */
+.container {
+  @include make-container(960px, 15px);
+}
+
+/**
+ * Hide text while making it readable for screen readers
+ */
+.hide-text {
+  display: none;
+  visibility: hidden;
+}
+/**
+ * Make some transition Timing
+ */
+.skills li,
+.work-list li {
+  transition: all 0.3s ease;
+}
+/**
+ * Make Color to every icons
+ */
+.html {
+  background-color: #f1662b;
+}
+.css {
+  background-color: #28a9e2;
+}
+.js {
+  background-color: #f8df1b;
+}
+.sass {
+  background-color: #ce679a;
+}
+.pug {
+  background-color: #efcda5;
+}
+.jq {
+  background-color: #0a69ae;
+}
+.vue {
+  background-color: #2fb982;
+}
+.gulp {
+  background-color: #ed5759;
+}
+/**
+ * icons Animations
+ */
+.skills {
+  li {
+    &:hover {
+      -webkit-animation: icon3d 400ms infinite;
+      background-color: $black;
+      animation: icon3d 400ms infinite;
+    }
+  }
+}
+
+.work-list {
+  li {
+    &:hover {
+      h2 {
+        -webkit-animation: icon3d 400ms infinite;
+        color: $black !important;
+        animation: icon3d 400ms infinite;
+      }
+    }
+  }
+}
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px rgba(244, 67, 54, 1), -5px -6px rgba(33, 150, 243, 1);
+  }
+  25% {
+    text-shadow: -5px -6px rgba(244, 67, 54, 1), 5px 4px rgba(33, 150, 243, 1);
+  }
+  50% {
+    text-shadow: 5px -4px rgba(244, 67, 54, 1), -8px 4px rgba(33, 150, 243, 1);
+  }
+  75% {
+    text-shadow: -8px -4px rgba(244, 67, 54, 1), -5px -4px rgba(33, 150, 243, 1);
+  }
+  100% {
+    text-shadow: -5px 0 rgba(244, 67, 54, 1), 5px -4px rgba(33, 150, 243, 1);
+  }
+}

@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  z-index: 1;
+  .header {
+    height: 160px;
+    grid-column: 2 / 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-transition: height 0.3s ease;
+    transition: height 0.3s ease;
+    .links {
+      width: 775px;
+      margin: auto;
+      ul.menu {
+        margin: 0;
+        padding: 0 15px;
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        li.theme_switcher {
+          margin: 0 0.5rem;
+          padding: 0 1rem;
+          .switch {
+            background-color: transparent;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+            outline: none;
+            img {
+              height: 22px;
+              width: 22px;
+              min-width: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Used when menu scrolled
+.nav-scroll {
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
+  .header {
+    height: 60px;
+    grid-auto-rows: minmax(60px, auto);
+  }
+}

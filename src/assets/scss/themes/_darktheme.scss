@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------------
+// this file contains everything related to the
+// dark theme:
+// -----------------------------------------------------------------------------
+body.dark {
+  color: $white;
+  background-color: $black;
+  .nav {
+    background-color: $black;
+  }
+  .lead {
+    .intro {
+      color: $white;
+      .email {
+        color: $white;
+        a {
+          background-color: $g-color;
+          color: $black;
+        }
+      }
+    }
+  }
+  .Technology,
+  .projects {
+    color: $white;
+  }
+  .skills {
+    li {
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
+    }
+  }
+  .work-list {
+    li {
+      &:hover {
+        .details {
+          h2 {
+            -webkit-animation: icon3d 400ms infinite;
+            color: $white !important;
+            animation: icon3d 400ms infinite;
+          }
+        }
+      }
+      a {
+        .details {
+          h2 {
+            color: $y-color !important;
+          }
+          small {
+            color: $gr-color !important;
+          }
+          .comment {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

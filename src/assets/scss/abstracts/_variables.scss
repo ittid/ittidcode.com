@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/**
+  * Font Name: [Inter]
+  * Use: [font-family: 'Inter']
+ */
+$main-font: "Inter";
+/**
+ * Anchor link color: $link-color
+ * Main app color: $main-black-color
+ * White color: $white-color
+ */
+$link-color: #0093e9;
+$grey: #403e42;
+/**
+ * App color patterns: Green - Yellow - Grey
+ */
+/* green */
+$g-color: #1fc844;
+$bg-g-color: #eafcee;
+/* yellow */
+$y-color: #f7b801;
+$bg-y-color: #fff8e2;
+/* grey */
+$gr-color: #9ca3a7;
+$bg-gr-color: #f2f2f2;
+
+/**
+ * DarkTheme Variable: 
+*/
+$black: #111;
+$white: #fff;

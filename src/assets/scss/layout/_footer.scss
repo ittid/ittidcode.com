@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer.footer {
+  grid-column: 2/12;
+  font-family: "Roboto Mono";
+  .copyright,
+  .sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sm a {
+    color: $grey;
+    background-color: $bg-gr-color;
+    margin: 0 10px;
+    border-radius: 4px;
+    padding: 3px 5px;
+    transition: all 0.36s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+      color: $g-color;
+      background-color: $bg-g-color;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+/*
+ * Mixin to Prefix Properties (vendor prefixing)
+ */
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $pfx in $prefixes {
+    #{"-" + $pfx + "-" + $property}: $value;
+  }
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+/*
+ * Mixin to create containers 
+ */
+@mixin make-container($width-x, $padding-x) {
+  max-width: $width-x;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*
+ * Mixin to add pseudo elements property
+ */
+@mixin pseudo($element, $display: block, $position: absolute, $content: "") {
+  &:#{$element},
+  &::#{$element} {
+    content: $content;
+    display: $display;
+    position: $position;
+  }
+}

@@ -1,0 +1,149 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.main-content {
+  grid-column: 2 / 12;
+  margin-top: 140px;
+  padding: 60px 0 0;
+  .lead {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    margin: 2em 0;
+    .intro {
+      grid-column: span 2;
+      color: $grey;
+      h1 {
+        font-size: 2em;
+        line-height: 1.5;
+        margin: 0;
+      }
+      p {
+        line-height: 1.7;
+        font-size: 1.29rem;
+      }
+      .email {
+        color: $grey;
+        margin-top: 2em;
+        span {
+          margin-right: 0.8em;
+          font-family: "Roboto Mono";
+          font-weight: bolder;
+          .hand {
+            font-size: 24px;
+            bottom: -0.15em;
+          }
+        }
+        a {
+          color: $g-color;
+          background-color: $bg-g-color;
+          font-family: "Roboto Mono";
+          border-radius: 4px;
+          padding: 3px 5px;
+        }
+      }
+    }
+    .github-section {
+      margin: auto 0 auto auto;
+      .github {
+        @include prefix(
+          box-shadow,
+          1px 2px 18px rgb(0 0 0 / 21%),
+          webkit moz o
+        );
+        background-color: #24292f;
+        border-radius: 20%;
+        height: 170px;
+        width: 170px;
+        text-align: center;
+        line-height: 16;
+        img {
+          max-width: 100px;
+          max-height: 100px;
+        }
+      }
+    }
+  }
+  .Technology {
+    margin: 4em 0 5em;
+    color: $grey;
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0;
+      span {
+        color: $g-color;
+      }
+    }
+    small {
+      font-family: "Roboto Mono";
+      font-size: 90%;
+    }
+    ul.skills {
+      margin: 4em 0 2em;
+      padding: 0;
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 2rem;
+      color: $white;
+      li {
+        height: 100px;
+        width: 100px;
+        box-shadow: 0px 4px 18px rgb(56 56 56 / 20%);
+        border-radius: 20%;
+        text-align: center;
+        line-height: 100px;
+        font-size: 1.2em;
+        font-family: "Roboto Mono";
+        font-weight: bolder;
+        cursor: pointer;
+      }
+    }
+  }
+  .projects {
+    color: $grey;
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0;
+      span {
+        color: $g-color;
+      }
+    }
+    small {
+      font-family: "Roboto Mono";
+      font-size: 90%;
+    }
+    .work-list {
+      margin: 4em 0;
+      padding: 0;
+      li {
+        display: block;
+        margin-bottom: 2em;
+        a {
+          display: flex;
+          align-items: center;
+          .details {
+            h2 {
+              font-size: 1.9em;
+              margin: 0;
+              color: #284b65;
+            }
+            small {
+              display: block;
+              color: $grey;
+              text-transform: uppercase;
+              font-size: 11px;
+            }
+            span {
+              font-family: "Roboto Mono";
+              color: $black;
+            }
+          }
+        }
+        &:hover {
+          @include prefix(transform, translateX(60px), webkit moz o);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,305 @@
+.grid-wrap
+    @include media("<=phone")
+        .header
+            .links
+                ul.menu
+                    justify-content: center
+        .intro
+            grid-column: span 3 !important
+            h1
+                text-align: center
+            p
+                font-size: 1.09rem !important
+                text-align: justify
+            .email
+                margin-top: 0
+                text-align: center
+                span
+                    position: relative
+                    font-size: 15px
+                    &:after
+                        content: "👇"
+                        font-size: 19px
+                        bottom: -0.30em
+                        position: absolute
+                .hand
+                    display: none
+                a
+                    margin-top: 5px
+                    display: block
+                    font-size: 13px
+        .github-section
+            grid-column: span 3
+            margin: 0 !important
+            a
+                .github
+                    margin-top: 1em
+                    border-radius: 0 !important
+                    width: auto !important
+                    height: 100px !important
+                    line-height: 140px !important
+                    img
+                        max-height: 50px !important
+                        max-width: 50px !important
+        .Technology, .projects
+            margin: 2em 0 5em !important
+            > h1
+                text-align: center
+                font-size: 1.2em !important
+            > small
+                font-size: 13px !important
+                text-align: center
+                display: block
+            ul.skills
+                grid-template-columns: repeat(1, 1fr) !important
+                justify-items: center
+                li
+                    width: 100% !important
+                    height: 80px !important
+                    border-radius: 0 !important
+                    line-height: 80px !important
+                    font-size: 1.1em !important
+            .work-list
+                margin: 2em 0 !important
+                li
+                    .details
+                        h2
+                            font-size: 1.2em !important
+                        small
+                            font-size: 10px !important
+                        span
+                            font-size: 14px !important
+                    &:hover
+                        @include prefix(transform, translateX(20px) !important, webkit moz o)
+        footer
+            .sm
+                a
+                    padding: 3px !important
+                    font-size: 13px
+            .copyright
+                p
+                    font-size: 13px
+                    margin-top: 0
+
+    @include media(">phone", "<=425px", "retina2x")
+        .header
+            .links
+                ul.menu
+                    justify-content: center
+        .intro
+            grid-column: span 3 !important
+            h1
+                text-align: center
+            p
+                font-size: 1.09rem !important
+                text-align: justify
+            .email
+                margin-top: 0
+                text-align: center
+                span
+                    position: relative
+                    font-size: 15px
+                    &:after
+                        content: "👇"
+                        font-size: 19px
+                        bottom: -0.30em
+                        position: absolute
+                .hand
+                    display: none
+                a
+                    margin-top: 5px
+                    display: block
+                    font-size: 13px
+        .github-section
+            grid-column: span 3
+            margin: 0 !important
+            a
+                .github
+                    margin-top: 1em
+                    border-radius: 0 !important
+                    width: auto !important
+                    height: 100px !important
+                    line-height: 140px !important
+                    img
+                        max-height: 50px !important
+                        max-width: 50px !important
+        .Technology, .projects
+            margin: 2em 0 5em !important
+            > h1
+                font-size: 1.5em !important
+            > small
+                font-size: 13px !important
+                display: block
+            ul.skills
+                grid-template-columns: repeat(1, 1fr) !important
+                justify-items: center
+                li
+                    width: 100% !important
+                    height: 80px !important
+                    border-radius: 0 !important
+                    line-height: 80px !important
+                    font-size: 1.1em !important
+            .work-list
+                margin: 2em 0 !important
+                li
+                    .details
+                        h2
+                            font-size: 1.2em !important
+                        small
+                            font-size: 10px !important
+                        span
+                            font-size: 14px
+                    &:hover
+                        @include prefix(transform, translateX(20px) !important, webkit moz o)
+        footer
+            .sm
+                a
+                    padding: 3px !important
+                    font-size: 13px
+            .copyright
+                p
+                    font-size: 13px
+                    margin-top: 0
+
+    @include media(">425px", "<=tablet")
+        .header
+            .links
+                ul.menu
+                    justify-content: center
+        .intro
+            grid-column: span 3 !important
+            h1
+                text-align: center
+            p
+                font-size: 1.09rem !important
+                text-align: justify
+            .email
+                margin-top: 0
+                text-align: center
+                span
+                    position: relative
+                    font-size: 15px
+                    &:after
+                        content: "👇"
+                        font-size: 19px
+                        bottom: -0.30em
+                        position: absolute
+                .hand
+                    display: none
+                a
+                    margin-top: 5px
+                    display: block
+                    font-size: 13px
+        .github-section
+            grid-column: span 3
+            margin: 0 !important
+            a
+                .github
+                    margin-top: 1em
+                    border-radius: 0 !important
+                    width: auto !important
+                    height: 100px !important
+                    line-height: 140px !important
+                    img
+                        max-height: 50px !important
+                        max-width: 50px !important
+        .Technology, .projects
+            margin: 2em 0 5em !important
+            > h1
+                font-size: 2em !important
+            > small
+                font-size: 13px !important
+                display: block
+            ul.skills
+                grid-template-columns: repeat(2, 1fr) !important
+                justify-items: center
+                li
+                    width: 100% !important
+                    height: 80px !important
+                    border-radius: 0 !important
+                    line-height: 80px !important
+                    font-size: 1.1em !important
+            .work-list
+                margin: 2em 0 !important
+                li
+                    .details
+                        h2
+                            font-size: 1.2em !important
+                        small
+                            font-size: 10px !important
+                        span
+                            font-size: 14px
+                    &:hover
+                        @include prefix(transform, translateX(20px) !important, webkit moz o)
+        footer
+            .sm
+                a
+                    padding: 3px !important
+                    font-size: 13px
+            .copyright
+                p
+                    font-size: 13px
+                    margin-top: 0
+
+    @include media(">tablet", "<desktop")
+
+        .intro
+            grid-column: span 3 !important
+            h1
+                text-align: center
+            p
+                text-align: justify
+            .email
+                margin-top: 0
+                text-align: center
+                span
+                    position: relative
+                    &:after
+                        content: "👇"
+                        font-size: 22px
+                        bottom: -0.30em
+                        position: absolute
+                .hand
+                    display: none
+                a
+                    margin-top: 10px
+                    display: block
+        .github-section
+            grid-column: span 3
+            margin: 0 !important
+            a
+                .github
+                    margin-top: 1em
+                    border-radius: 0 !important
+                    width: auto !important
+                    height: 100px !important
+                    line-height: 140px !important
+                    img
+                        max-height: 50px !important
+                        max-width: 50px !important
+        .Technology, .projects
+            ul.skills
+                grid-template-columns: repeat(4, 1fr) !important
+                justify-items: center
+                li
+                    width: 100% !important
+                    height: 80px !important
+                    border-radius: 0 !important
+                    line-height: 80px !important
+                    font-size: 1.1em !important
+            .work-list
+                li
+                    .details
+                        h2
+                            font-size: 1.2em !important
+                        small
+                            font-size: 10px !important
+                        span
+                            font-size: 14px
+        footer
+            .sm
+                a
+                    padding: 3px !important
+            .copyright
+                p
+                    margin-top: 0
