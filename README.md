@@ -10,9 +10,9 @@ npm install
 npm run serve
 npm run build
 ```
-
+### Features
 - Night mode
-- Code theme (starring [New Moon]([url](https://taniarascia.github.io/new-moon))
+- Code theme (starring [New Moon](https://taniarascia.github.io/new-moon))
 
 ### License
 This project is open source and available under the MIT License.
