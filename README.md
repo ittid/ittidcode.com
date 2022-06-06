@@ -1,29 +1,13 @@
-# ittidcode
+# ittidcode.com
+A Personal Website Built With Vue.js Framework
 
-## Project setup
+## Project setup & Compiles and hot-reloads for development & minifies for production
 ```
 npm install
 ```
-
-### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
 ```
 npm run build
 ```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
